@@ -3,18 +3,18 @@
 
 This project is the POC of Google Assistan which proofing developer can create a custom voice command and receive corresponding (e.g Hey Google! Open Example App and go to Causeway Bay!)
 
-##Contents
+## Contents
 - [Requirement](https://www.google.com)
 - [Step of development](https://www.google.com)
 - [Code Explaination](https://www.google.com)
 
-##Requirement
+## Requirement
 - integrated Firebase Dynamic Link
 - Install [App Actions Test Tool](https://developers.google.com/assistant/app/test-tool) plugin in Android Studio
 - Understand the [Build in App Actions intents](https://developers.google.com/assistant/app/reference/built-in-intents) & [Custom intents](https://developers.google.com/assistant/app/custom-intents)
 - Have a google developer account to publish the app
 
-##Step of Development
+## Step of Development
 1. Handle the deeplink (Firebase Dynamic Linking)
 2. Declare different actions (Build in App Actions Intents & Custom Intent)
 3. Upload the apk/aab file in Google Play Console
@@ -22,10 +22,10 @@ This project is the POC of Google Assistan which proofing developer can create a
 5. Turn on the App Actions Test Tool to update the action previews when run the project
 6. Testing the voice command in google assistant or text command in test tool
 
-##Code Explaination
+## Code Explaination
 
-###manifests
-#####Declare the deeplink in Android manifests
+### manifests
+##### Declare the deeplink in Android manifests
 ```xml
 <activity android:name=".MainActivity">
             <intent-filter>
@@ -48,7 +48,7 @@ This project is the POC of Google Assistan which proofing developer can create a
         </activity>
 ```
 
-#####Declare the actions.xml file and located in manifest
+##### Declare the actions.xml file and located in manifest
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -73,9 +73,9 @@ This project is the POC of Google Assistan which proofing developer can create a
 </manifest>
 ```
 
-###actions.xml
-#####create the actions.xml under res->xml->actions.xml
-- #####using build in action intents
+### actions.xml
+##### create the actions.xml under res->xml->actions.xml
+- ##### using build in action intents
 Learn More about how to use [App Actions](https://developer.android.com/guide/actions/index.html)
 OPEN_APP_FEATURE is the build in intent for using voice command to open app. You can say "Hey Google! Open **[app name]** **[feature]**" to receive the feature parameters.
 @array/ExampleQueries is placed in strings.xml
@@ -131,7 +131,7 @@ EXAMPLE_INTENT is the custom intent for using custom voice command to open app a
 </actions>
 ```
 
-###strings.xml
+### strings.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -144,7 +144,7 @@ EXAMPLE_INTENT is the custom intent for using custom voice command to open app a
 </resources>
 ```
 
-###MainActivity.kt
+### MainActivity.kt
 The handleDeepLink function is receive the voice message parameters and pass back to the activity class.
 ```kotlin
 class MainActivity : AppCompatActivity() {
