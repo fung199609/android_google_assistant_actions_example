@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "65454358183",
+    "project_id": "pc-api-7200637801568794222-733",
+    "storage_bucket": "pc-api-7200637801568794222-733.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65454358183:android:a34fdb2f6872c699e2e582",
+        "android_client_info": {
+          "package_name": "com.andy8786.poor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65454358183-0jnno4sb4lpot9ejps8bobqp9jv8o7ue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAZVu6YWS-_8BRM4xuIWnI4OGrltn6cDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65454358183-0jnno4sb4lpot9ejps8bobqp9jv8o7ue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
